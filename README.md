@@ -290,4 +290,4 @@ beltu ai providers
 ## AI stack
  
 AI-SCORE-BELTU integrates with OpenAI GPT-4o, Anthropic Claude, DeepSeek-Coder-V2-compatible endpoints, Code Llama/Ollama, PentestGPT, Burp message analysis, scikit-learn, LangChain, LangGraph, Interactsh, and PyJWT — all bounded and opt-in. Remote AI never replaces deterministic verification; it only assists triage.
-  
+ 
