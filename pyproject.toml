@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling==1.32.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-score-beltu"
+version = "1.6.0"
+description = "AI-SCORE-BELTU — terminal-first authorized web/API security assessment framework"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "AI-SCORE-BELTU Project"}]
+dependencies = [
+  "httpx==0.28.1",
+  "typer==0.27.2",
+  "rich==15.0.0",
+  "pydantic==2.13.5",
+  "PyYAML==6.0.3",
+  "PyJWT==2.14.0",
+]
+
+[project.optional-dependencies]
+local-ai = ["scikit-learn==1.9.1", "langchain==1.4.0", "langgraph==1.2.11"]
+all = ["scikit-learn==1.9.1", "langchain==1.4.0", "langgraph==1.2.11"]
+dev = ["pytest==9.1.1", "ruff==0.16.7"]
+
+[project.scripts]
+ai-score-beltu = "beltu.cli:main"
+beltu = "beltu.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/beltu"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

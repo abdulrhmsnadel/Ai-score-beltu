@@ -1,0 +1,6 @@
+AI-SCORE-BELTU release 1.6.0
+
+Core: httpx 0.28.1 | typer 0.27.2 | rich 15.0.0 | pydantic 2.13.5 | PyYAML 6.0.3 | PyJWT 2.14.0
+Optional AI: scikit-learn 1.9.1 | langchain 1.4.0 | langgraph 1.2.11
+AI integrations: OpenAI GPT-4o, Claude, DeepSeek-Coder-V2-compatible, Code Llama/Ollama, PentestGPT, Burp bridge, scikit-learn, LangChain, LangGraph, Interactsh, PyJWT
+Verification: 100 varied engine vectors + provider contract tests; see TEST_100_REPORT.md
